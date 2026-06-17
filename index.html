@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdul Rauf — CPA (License Awaiting) | Accounting & Finance Professional</title>
+<meta name="description" content="Portfolio of Abdul Rauf, Accounting & Finance Professional with 14+ years across financial accounting, audit, taxation, and risk management.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#landing" class="nav-logo">AR</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about" data-label="About">About</a>
+      <a href="#experience" data-label="Experience">Experience</a>
+      <a href="#education" data-label="Education">Education</a>
+      <a href="#projects" data-label="Initiatives">Initiatives</a>
+      <a href="#skills" data-label="Skills">Skills</a>
+      <a href="#certifications" data-label="Certifications">Certifications</a>
+      <a href="#achievements" data-label="Achievements">Achievements</a>
+      <a href="#contact" class="nav-cta" data-label="Contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ PAGE 1 — LANDING ============ -->
+<section id="landing" class="landing">
+  <div class="ledger-bg" aria-hidden="true"></div>
+  <div class="landing-inner">
+    <div class="landing-logo-mark">AR</div>
+    <h1 class="landing-name">Abdul Rauf</h1>
+    <p class="landing-designation">CPA <span class="cpa-note">(License Awaiting)</span> · Accounting &amp; Finance Professional</p>
+
+    <p class="landing-intro" id="landingIntro">Accounting &amp; Finance Professional with 14+ years of progressive experience across financial accounting, financial reporting, US taxation, internal audit, and risk management spanning India, the UAE, and the United States. Skilled in managing full audit cycles, preparing accurate financial statements, and driving measurable improvements in cost, compliance, and operational efficiency. Currently focused on financial controllership, strategic decision support, and investment banking, backed by hands-on fluency in Excel, NetSuite, SAP, and data analytics tools. Let's connect if you're looking for a finance professional ready to bring immediate, measurable impact to your organization.</p>
+
+
+    <div class="landing-ctas">
+      <a href="#about" class="btn btn-primary">Learn More About Me</a>
+      <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+    </div>
+
+    <div class="landing-socials">
+      <a href="https://www.linkedin.com/in/abdulrauf/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19ZM8.34 18V10.13H5.67V18H8.34ZM7 9.04C7.93 9.04 8.51 8.42 8.51 7.64C8.49 6.84 7.93 6.23 7.02 6.23C6.1 6.23 5.5 6.84 5.5 7.64C5.5 8.42 6.1 9.04 7 9.04ZM18.34 18V13.62C18.34 11.27 17.09 10.18 15.42 10.18C14.08 10.18 13.47 10.93 13.13 11.46V10.13H10.46C10.5 10.91 10.46 18 10.46 18H13.13V13.6C13.13 13.36 13.15 13.12 13.22 12.95C13.41 12.47 13.85 11.97 14.58 11.97C15.54 11.97 15.91 12.71 15.91 13.79V18H18.34Z" fill="currentColor"/></svg>
+      </a>
+      <a href="mailto:ar4638@rit.edu" class="social-icon" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M3 6.5C3 5.67 3.67 5 4.5 5h15c.83 0 1.5.67 1.5 1.5v11c0 .83-.67 1.5-1.5 1.5h-15C3.67 19 3 18.33 3 17.5v-11Z" stroke="currentColor" stroke-width="1.6"/><path d="M4 6.5l8 6.5 8-6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ============ PAGE 2 — ABOUT ============ -->
+<section id="about" class="section about">
+  <div class="section-inner about-grid">
+    <div class="about-photo-col">
+      <div class="about-photo-frame">
+        <img src="images/profile/profile_photo.jpg" alt="Abdul Rauf" class="about-photo" onerror="this.onerror=null;this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDgwIiB2aWV3Qm94PSIwIDAgNDAwIDQ4MCI+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSI0ODAiIGZpbGw9IiMwYjFlM2QiLz48Y2lyY2xlIGN4PSIyMDAiIGN5PSIxODAiIHI9IjcwIiBmaWxsPSIjMWEzMTU2Ii8+PHJlY3QgeD0iOTAiIHk9IjI4MCIgd2lkdGg9IjIyMCIgaGVpZ2h0PSIxNjAiIHJ4PSIxMTAiIGZpbGw9IiMxYTMxNTYiLz48dGV4dCB4PSI1MCUiIHk9IjQ1MCIgZm9udC1mYW1pbHk9IkludGVyLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmaWxsPSIjQzlBMjI3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QaG90byBjb21pbmcgc29vbjwvdGV4dD48L3N2Zz4=';">
+      </div>
+    </div>
+
+    <div class="about-content-col">
+      <span class="eyebrow">About Me</span>
+      <h2 class="section-title">A finance professional built across the globe</h2>
+      <p class="about-text">I am an Accounting &amp; Finance Professional with over 14 years of progressive experience across financial accounting, US taxation and regulations, audits, internal controls, and risk assessment. My expertise spans managing full audit cycles, preparing financial statements, analyzing complex transactions, and evaluating internal controls for accuracy and regulatory compliance. I rely on tools like Advanced Excel, NetSuite, SAP, Oracle, QuickBooks, and dashboard creation to turn raw financial data into decisions leadership can act on. I recently completed my Master's in Accounting and Analytics from the Saunders College of Business at RIT, building on a Bachelor of Commerce from Mangalore University, and I am currently awaiting my CPA license. What sets me apart is the breadth of my experience — from KYC operations at JP Morgan Chase, to internal audit at Malabar Gold &amp; Diamonds, to financial controllership for a $100 million transaction volume business — paired with a consistent track record of reducing costs, improving accuracy, and strengthening compliance wherever I've worked. I bring high integrity, professional skepticism, and a genuine enthusiasm for cross-functional collaboration to every role.</p>
+
+      <div class="mv-row">
+        <div class="mv-card" id="missionCard">
+          <div class="mv-card-inner">
+            <span class="mv-label">Mission</span>
+            <p>To bring precision, integrity, and data-driven insight to every financial decision I support, helping organizations strengthen controls, reduce risk, and operate with greater efficiency.</p>
+          </div>
+        </div>
+        <div class="mv-card" id="visionCard">
+          <div class="mv-card-inner">
+            <span class="mv-label">Vision</span>
+            <p>To grow into a trusted financial leadership role where rigorous analysis and clear communication consistently translate into smarter, more confident business decisions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="view-work-row">
+        <a href="#experience" class="view-work-btn">Work Experience</a>
+        <a href="#education" class="view-work-btn">Education</a>
+        <a href="#projects" class="view-work-btn">Initiatives</a>
+        <a href="#skills" class="view-work-btn">Skills</a>
+        <a href="#certifications" class="view-work-btn">Certifications</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAGE 3 — EXPERIENCE ============ -->
+<section id="experience" class="section experience">
+  <div class="section-inner">
+    <span class="eyebrow">Career History</span>
+    <h2 class="section-title">Work Experience</h2>
+
+    <div class="exp-list">
+
+      <article class="exp-card">
+        <div class="exp-panel">
+          <span class="exp-duration">Oct 2025 — Apr 2026</span>
+          <span class="exp-badge">Full-time</span>
+        </div>
+        <div class="exp-body">
+          <h3 class="exp-role">Finance Controller</h3>
+          <p class="exp-meta">Exact Medicare · United States</p>
+          <h4 class="exp-sub">Key Responsibilities</h4>
+          <ul class="exp-list-items">
+            <li>Directed financial accounting activities including invoicing, refunds, payroll management, accounts receivable collection, and supplier/contractor payments.</li>
+            <li>Prepared Management Information System (MIS) reports on operational performance for leadership review.</li>
+            <li>Delivered financial analysis and actionable recommendations to senior management.</li>
+            <li>Proposed financial strategies around contractual obligations, systems, and procedures.</li>
+          </ul>
+          <h4 class="exp-sub">Key Achievements</h4>
+          <ul class="exp-achievements">
+            <li><strong>$100M</strong> annual transaction volume managed, with process improvements cutting invoicing and payroll processing time by <strong>15%</strong>.</li>
+            <li>MIS reporting covered <strong>$150M</strong> in assets and operations; proposed strategies contributed to a <strong>15%</strong> reduction in operational costs.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="exp-card">
+        <div class="exp-panel">
+          <span class="exp-duration">Mar 2021 — Jul 2024</span>
+          <span class="exp-badge">Full-time</span>
+        </div>
+        <div class="exp-body">
+          <h3 class="exp-role">Senior Analyst, Costing &amp; Business Analysis</h3>
+          <p class="exp-meta">e&amp; by Etisalat · United Arab Emirates</p>
+          <h4 class="exp-sub">Key Responsibilities</h4>
+          <ul class="exp-list-items">
+            <li>Estimated total project and operational costs across the business.</li>
+            <li>Planned and managed budgets across multiple concurrent projects.</li>
+            <li>Developed and maintained risk mitigation strategies for financial contingencies.</li>
+            <li>Ensured quality of financial and operational inputs for cost models.</li>
+          </ul>
+          <h4 class="exp-sub">Key Achievements</h4>
+          <ul class="exp-achievements">
+            <li>Estimated costs averaging <strong>$50M</strong> annually; held annual budget oversight of <strong>$100M</strong>, reducing risk impact by <strong>20%</strong>.</li>
+            <li>Improved cost model accuracy by <strong>100%</strong> through rigorous validation and refinement.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="exp-card">
+        <div class="exp-panel">
+          <span class="exp-duration">Apr 2019 — Mar 2021</span>
+          <span class="exp-badge">Full-time</span>
+        </div>
+        <div class="exp-body">
+          <h3 class="exp-role">Financial Analyst</h3>
+          <p class="exp-meta">Emirates National Food · United Arab Emirates</p>
+          <h4 class="exp-sub">Key Responsibilities</h4>
+          <ul class="exp-list-items">
+            <li>Participated in accurate, timely month-end closing procedures.</li>
+            <li>Conducted bank reconciliation as part of the closing cycle.</li>
+            <li>Performed detailed revenue analysis and reported findings to management.</li>
+          </ul>
+          <h4 class="exp-sub">Key Achievements</h4>
+          <ul class="exp-achievements">
+            <li>Enhanced closing process efficiency, resulting in more timely and accurate financial reporting.</li>
+            <li>Revenue analysis contributed to a <strong>14%</strong> improvement in forecasting and decision-making accuracy.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="exp-card">
+        <div class="exp-panel">
+          <span class="exp-duration">Oct 2013 — Mar 2019</span>
+          <span class="exp-badge">Full-time</span>
+        </div>
+        <div class="exp-body">
+          <h3 class="exp-role">Finance Manager</h3>
+          <p class="exp-meta">Lyno Fabrica · India</p>
+          <h4 class="exp-sub">Key Responsibilities</h4>
+          <ul class="exp-list-items">
+            <li>Advised senior management on optimal utilization of financial structures.</li>
+            <li>Conducted internal audits and tax compliance reviews.</li>
+            <li>Developed and implemented tax strategies to optimize liabilities.</li>
+          </ul>
+          <h4 class="exp-sub">Key Achievements</h4>
+          <ul class="exp-achievements">
+            <li>Drove a <strong>15%</strong> improvement in financial efficiency and a <strong>12%</strong> increase in overall profitability.</li>
+            <li>Reduced audit discrepancies by <strong>8%</strong> across <strong>$50M</strong> in financial operations.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="exp-card">
+        <div class="exp-panel">
+          <span class="exp-duration">Aug 2011 — Oct 2013</span>
+          <span class="exp-badge">Full-time</span>
+        </div>
+        <div class="exp-body">
+          <h3 class="exp-role">Internal Audit Executive</h3>
+          <p class="exp-meta">Malabar Gold &amp; Diamonds · United Arab Emirates</p>
+          <h4 class="exp-sub">Key Responsibilities</h4>
+          <ul class="exp-list-items">
+            <li>Reviewed and devised monthly and yearly financial statements, balance sheets, and income statements.</li>
+            <li>Conducted internal audits and reviewed cash flow projections.</li>
+            <li>Managed and analyzed monthly profit &amp; loss statements.</li>
+          </ul>
+          <h4 class="exp-sub">Key Achievements</h4>
+          <ul class="exp-achievements">
+            <li>Ensured accuracy and compliance with accounting standards across all statement reviews.</li>
+            <li>Implemented cost-reduction strategies while maintaining alignment with budgetary targets.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="exp-card">
+        <div class="exp-panel">
+          <span class="exp-duration">Jul 2008 — Jun 2011</span>
+          <span class="exp-badge">Full-time</span>
+        </div>
+        <div class="exp-body">
+          <h3 class="exp-role">Analyst, KYC Operations</h3>
+          <p class="exp-meta">JP Morgan Chase · India</p>
+          <h4 class="exp-sub">Key Responsibilities</h4>
+          <ul class="exp-list-items">
+            <li>Performed KYC activities including creation and review of client profiles.</li>
+            <li>Identified and addressed data quality issues across client records.</li>
+            <li>Implemented monitoring and resolution strategies for unresolved issues.</li>
+          </ul>
+          <h4 class="exp-sub">Key Achievements</h4>
+          <ul class="exp-achievements">
+            <li>Managed an average of <strong>75</strong> client profiles per month.</li>
+            <li>Improved data accuracy and reduced unresolved issues through effective monitoring.</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAGE 4 — EDUCATION ============ -->
+<section id="education" class="section education">
+  <div class="section-inner">
+    <span class="eyebrow">Academic Background</span>
+    <h2 class="section-title">Education</h2>
+
+    <div class="edu-grid">
+      <article class="edu-card drop-in">
+        <div class="edu-card-top">
+          <span class="edu-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3Z" fill="currentColor"/><path d="M5 13.18v4.34L12 21l7-3.48v-4.34l-7 3.82-7-3.82Z" fill="currentColor"/></svg>
+          </span>
+          <span class="edu-mode">Full-time</span>
+        </div>
+        <h3 class="edu-qual">Master's in Accounting and Analytics</h3>
+        <p class="edu-inst">Saunders College of Business, Rochester Institute of Technology (RIT), USA</p>
+        <p class="edu-duration">Completed May 2025</p>
+        <ul class="edu-highlights">
+          <li>Advanced coursework in accounting analytics and financial data analysis.</li>
+          <li>Strong foundation in US taxation, regulatory compliance, and financial reporting standards.</li>
+          <li>Capstone focus bridging accounting fundamentals with modern data analytics tools.</li>
+        </ul>
+      </article>
+
+      <article class="edu-card rise-in">
+        <div class="edu-card-top">
+          <span class="edu-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3Z" fill="currentColor"/><path d="M5 13.18v4.34L12 21l7-3.48v-4.34l-7 3.82-7-3.82Z" fill="currentColor"/></svg>
+          </span>
+          <span class="edu-mode">Full-time</span>
+        </div>
+        <h3 class="edu-qual">Bachelor of Commerce</h3>
+        <p class="edu-inst">Mangalore University (NAAC accredited), India</p>
+        <p class="edu-duration">Completed June 2008</p>
+        <ul class="edu-highlights">
+          <li>Core foundation in financial accounting, auditing, and commerce principles.</li>
+          <li>Built the base for a 14+ year career spanning audit, taxation, and financial analysis.</li>
+          <li>NAAC-accredited program recognized for academic quality.</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="cpa-strip">
+      <span class="cpa-strip-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2 4 5v6c0 5 3.4 8.4 8 11 4.6-2.6 8-6 8-11V5l-8-3Z" fill="currentColor"/></svg>
+      </span>
+      <span>Certified Public Accountant (CPA) — <strong>License Awaiting</strong></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAGE 5 — INITIATIVES / PROJECTS ============ -->
+<section id="projects" class="section projects">
+  <div class="section-inner">
+    <span class="eyebrow">Selected Work</span>
+    <h2 class="section-title">Key Initiatives</h2>
+
+    <div class="proj-list">
+      <article class="proj-card">
+        <div class="proj-panel">
+          <span class="proj-type">Cost Analysis &amp; Financial Modeling</span>
+          <h3 class="proj-title">Enterprise Cost Modeling &amp; Budget Oversight</h3>
+          <span class="proj-duration">Mar 2021 – Jul 2024</span>
+        </div>
+        <div class="proj-body">
+          <p class="proj-desc">Led cost estimation and budget planning for projects and operations averaging $50 million annually, while overseeing a combined annual budget of $100 million across multiple workstreams at e&amp; by Etisalat.</p>
+          <h4 class="proj-sub">Key Outcomes</h4>
+          <div class="proj-outcomes">
+            <div class="outcome-box"><span class="outcome-num">1</span><p>Improved cost model accuracy by <strong>100%</strong> through rigorous validation.</p></div>
+            <div class="outcome-box"><span class="outcome-num">2</span><p>Reduced risk impact by <strong>20%</strong> via proactive risk mitigation planning.</p></div>
+            <div class="outcome-box"><span class="outcome-num">3</span><p>Applied industry best-practice financial modeling to strengthen forecasting reliability.</p></div>
+          </div>
+          <h4 class="proj-sub">Technologies Used</h4>
+          <div class="tech-pills">
+            <span class="pill">Excel</span><span class="pill">SAP</span><span class="pill">Financial Modeling</span><span class="pill">Dashboard Creation</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card">
+        <div class="proj-panel">
+          <span class="proj-type">Financial Accounting &amp; Process Improvement</span>
+          <h3 class="proj-title">Financial Controllership &amp; Process Optimization</h3>
+          <span class="proj-duration">Oct 2025 – Apr 2026</span>
+        </div>
+        <div class="proj-body">
+          <p class="proj-desc">Directed end-to-end financial accounting operations — invoicing, payroll, accounts receivable, and supplier payments — for a $100 million annual transaction volume at Exact Medicare.</p>
+          <h4 class="proj-sub">Key Outcomes</h4>
+          <div class="proj-outcomes">
+            <div class="outcome-box"><span class="outcome-num">1</span><p>Cut invoicing and payroll processing time by <strong>15%</strong>.</p></div>
+            <div class="outcome-box"><span class="outcome-num">2</span><p>Decreased accounts receivable aging.</p></div>
+            <div class="outcome-box"><span class="outcome-num">3</span><p>Delivered MIS reporting across <strong>$150M</strong> in assets and operations.</p></div>
+            <div class="outcome-box"><span class="outcome-num">4</span><p>Supported a <strong>15%</strong> reduction in operational costs.</p></div>
+          </div>
+          <h4 class="proj-sub">Technologies Used</h4>
+          <div class="tech-pills">
+            <span class="pill">NetSuite</span><span class="pill">Excel</span><span class="pill">MIS Reporting</span><span class="pill">QuickBooks</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card">
+        <div class="proj-panel">
+          <span class="proj-type">Internal Audit &amp; Taxation</span>
+          <h3 class="proj-title">Internal Audit &amp; Tax Compliance Review</h3>
+          <span class="proj-duration">Oct 2013 – Mar 2019</span>
+        </div>
+        <div class="proj-body">
+          <p class="proj-desc">Conducted internal audits and tax compliance reviews across $50 million in financial operations at Lyno Fabrica, identifying risk areas and optimizing tax strategy.</p>
+          <h4 class="proj-sub">Key Outcomes</h4>
+          <div class="proj-outcomes">
+            <div class="outcome-box"><span class="outcome-num">1</span><p>Reduced audit discrepancies by <strong>8%</strong>.</p></div>
+            <div class="outcome-box"><span class="outcome-num">2</span><p>Achieved measurable tax savings through optimized tax strategies.</p></div>
+            <div class="outcome-box"><span class="outcome-num">3</span><p>Ensured ongoing compliance with evolving regulations.</p></div>
+          </div>
+          <h4 class="proj-sub">Technologies Used</h4>
+          <div class="tech-pills">
+            <span class="pill">Tax Compliance</span><span class="pill">Internal Audit</span><span class="pill">Financial Reporting</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card">
+        <div class="proj-panel">
+          <span class="proj-type">Capital Markets &amp; Governance</span>
+          <h3 class="proj-title">Capital Markets &amp; IPO Readiness Experience</h3>
+          <span class="proj-duration">Ongoing</span>
+        </div>
+        <div class="proj-body">
+          <p class="proj-desc">Supported organizations in strengthening financial reporting, internal controls, and governance processes aligned with IPO readiness objectives, working closely with auditors, finance leaders, and external advisors.</p>
+          <h4 class="proj-sub">Key Outcomes</h4>
+          <div class="proj-outcomes">
+            <div class="outcome-box"><span class="outcome-num">1</span><p>Strengthened financial reporting, internal controls, and governance processes aligned with IPO readiness objectives.</p></div>
+            <div class="outcome-box"><span class="outcome-num">2</span><p>Worked closely with auditors, finance leaders, and external advisors to ensure compliance and reporting accuracy.</p></div>
+            <div class="outcome-box"><span class="outcome-num">3</span><p>Contributed to financial models, budgets, forecasts, and management reports used in strategic growth planning.</p></div>
+            <div class="outcome-box"><span class="outcome-num">4</span><p>Prepared audit-ready financial information and supported due diligence requirements for senior stakeholders.</p></div>
+          </div>
+          <h4 class="proj-sub">Technologies Used</h4>
+          <div class="tech-pills">
+            <span class="pill">Financial Modeling</span><span class="pill">Due Diligence</span><span class="pill">Governance</span><span class="pill">Investment Banking</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAGE 6 — SKILLS ============ -->
+<section id="skills" class="section skills">
+  <div class="section-inner">
+    <span class="eyebrow">Capabilities</span>
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-cat">
+        <div class="skill-cat-head"><span class="skill-icon">📊</span><h3>Financial Accounting &amp; Reporting</h3></div>
+        <div class="skill-bar-row" data-pct="92"><span class="skill-name">Financial Statement Preparation</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+        <div class="skill-bar-row" data-pct="90"><span class="skill-name">Financial Reporting</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+        <div class="skill-bar-row" data-pct="88"><span class="skill-name">GAAP Compliance</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-head"><span class="skill-icon">🛡️</span><h3>Audit &amp; Risk</h3></div>
+        <div class="skill-bar-row" data-pct="90"><span class="skill-name">Internal Audit</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+        <div class="skill-bar-row" data-pct="87"><span class="skill-name">Risk Management</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+        <div class="skill-bar-row" data-pct="82"><span class="skill-name">Due Diligence</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-head"><span class="skill-icon">📋</span><h3>Tax &amp; Regulatory</h3></div>
+        <div class="skill-bar-row" data-pct="85"><span class="skill-name">US Taxation</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+        <div class="skill-bar-row" data-pct="86"><span class="skill-name">Regulatory Compliance</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-head"><span class="skill-icon">📈</span><h3>Financial Analysis &amp; Planning</h3></div>
+        <div class="skill-bar-row" data-pct="93"><span class="skill-name">Financial Analysis</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+        <div class="skill-bar-row" data-pct="89"><span class="skill-name">Budgeting &amp; Forecasting</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+        <div class="skill-bar-row" data-pct="85"><span class="skill-name">Cash Flow Analysis</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-head"><span class="skill-icon">💻</span><h3>Data &amp; Technical Tools</h3></div>
+        <div class="skill-bar-row" data-pct="95"><span class="skill-name">Advanced MS Excel</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+        <div class="skill-bar-row" data-pct="85"><span class="skill-name">SAP</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+        <div class="skill-bar-row" data-pct="78"><span class="skill-name">Oracle</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+        <div class="skill-bar-row" data-pct="80"><span class="skill-name">QuickBooks</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+        <div class="skill-bar-row" data-pct="82"><span class="skill-name">Dashboard Creation</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+        <div class="skill-bar-row" data-pct="87"><span class="skill-name">Data Analysis</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-head"><span class="skill-icon">🤝</span><h3>Leadership &amp; Collaboration</h3></div>
+        <div class="skill-bar-row" data-pct="90"><span class="skill-name">Cross-Functional Collaboration</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+        <div class="skill-bar-row" data-pct="88"><span class="skill-name">Stakeholder Engagement</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+        <div class="skill-bar-row" data-pct="80"><span class="skill-name">Team Leadership</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+        <div class="skill-bar-row" data-pct="82"><span class="skill-name">Vendor Management</span><div class="bar-track"><div class="bar-fill"></div></div><span class="bar-pct">0%</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAGE 7 — CERTIFICATIONS ============ -->
+<section id="certifications" class="section certifications">
+  <div class="section-inner">
+    <span class="eyebrow">Credentials</span>
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="cert-grid">
+      <article class="cert-card">
+        <div class="cert-img-wrap">
+          <img src="images/certificates/certificate_jagsom_pgcia.jpg" alt="Post Graduate Certificate in International Accounting and Analytics certificate" class="cert-img" onerror="this.parentElement.classList.add('cert-img-missing'); this.style.display='none';">
+          <div class="cert-placeholder"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 4 5v6c0 5 3.4 8.4 8 11 4.6-2.6 8-6 8-11V5l-8-3Z" fill="currentColor"/></svg><span>Image coming soon</span></div>
+        </div>
+        <div class="cert-info">
+          <span class="cert-provider-badge">Jagdish Sheth School of Management</span>
+          <h3>Post Graduate Certificate in International Accounting and Analytics</h3>
+        </div>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-img-wrap">
+          <img src="images/certificates/certificate_ey_academy.jpg" alt="Accounting Standards Course certificate" class="cert-img" onerror="this.parentElement.classList.add('cert-img-missing'); this.style.display='none';">
+          <div class="cert-placeholder"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 4 5v6c0 5 3.4 8.4 8 11 4.6-2.6 8-6 8-11V5l-8-3Z" fill="currentColor"/></svg><span>Image coming soon</span></div>
+        </div>
+        <div class="cert-info">
+          <span class="cert-provider-badge">E&amp;Y Academy of Business</span>
+          <h3>Accounting Standards Course</h3>
+        </div>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-img-wrap">
+          <img src="images/certificates/certificate_workforce_academy.jpg" alt="Data Analysis Support Course certificate" class="cert-img" onerror="this.parentElement.classList.add('cert-img-missing'); this.style.display='none';">
+          <div class="cert-placeholder"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 4 5v6c0 5 3.4 8.4 8 11 4.6-2.6 8-6 8-11V5l-8-3Z" fill="currentColor"/></svg><span>Image coming soon</span></div>
+        </div>
+        <div class="cert-info">
+          <span class="cert-provider-badge">Workforce Academy Partnership</span>
+          <h3>Data Analysis Support Course</h3>
+        </div>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-img-wrap">
+          <img src="images/certificates/certificate_microsoft_365.jpg" alt="Microsoft Office 365 Training certificate" class="cert-img" onerror="this.parentElement.classList.add('cert-img-missing'); this.style.display='none';">
+          <div class="cert-placeholder"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 4 5v6c0 5 3.4 8.4 8 11 4.6-2.6 8-6 8-11V5l-8-3Z" fill="currentColor"/></svg><span>Image coming soon</span></div>
+        </div>
+        <div class="cert-info">
+          <span class="cert-provider-badge">Microsoft</span>
+          <h3>Microsoft Office 365 Training</h3>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAGE 8 — ACHIEVEMENTS ============ -->
+<section id="achievements" class="section achievements">
+  <div class="section-inner">
+    <span class="eyebrow">Recognition</span>
+    <h2 class="section-title">Achievements &amp; Recognition</h2>
+    <p class="section-subheading">Over a decade of measurable impact across audit, finance, and operations</p>
+
+    <div class="stat-row">
+      <div class="stat"><span class="stat-num" data-count="14">0</span><span class="stat-suffix">+</span><span class="stat-label">Years Experience</span></div>
+      <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-suffix">+</span><span class="stat-label">Certifications</span></div>
+      <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-suffix"></span><span class="stat-label">Initiatives</span></div>
+      <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-suffix">+</span><span class="stat-label">Roles Held</span></div>
+    </div>
+
+    <div class="achv-grid">
+      <article class="achv-card">
+        <div class="achv-img-wrap">
+          <img src="images/achievements/achievement_1.jpg" alt="Cost model accuracy achievement" class="achv-img" onerror="this.parentElement.classList.add('achv-img-missing'); this.style.display='none';">
+          <div class="achv-placeholder"><svg viewBox="0 0 24 24" fill="none"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 6H4a3 3 0 0 0 3 5M17 6h3a3 3 0 0 1-3 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Image coming soon</span></div>
+        </div>
+        <div class="achv-info">
+          <div class="achv-tags"><span class="achv-badge professional">Professional</span><span class="achv-year">2024</span></div>
+          <h3>100% Improvement in Cost Model Accuracy</h3>
+          <p class="achv-inst">e&amp; by Etisalat</p>
+          <p class="achv-desc">Achieved a 100% improvement in cost model accuracy through rigorous validation and refinement of financial and operational inputs.</p>
+        </div>
+      </article>
+
+      <article class="achv-card">
+        <div class="achv-img-wrap">
+          <img src="images/achievements/achievement_2.jpg" alt="Beta Gamma Sigma Honor Society achievement" class="achv-img" onerror="this.parentElement.classList.add('achv-img-missing'); this.style.display='none';">
+          <div class="achv-placeholder"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3Z" fill="currentColor"/><path d="M5 13.18v4.34L12 21l7-3.48v-4.34l-7 3.82-7-3.82Z" fill="currentColor"/></svg><span>Image coming soon</span></div>
+        </div>
+        <div class="achv-info">
+          <div class="achv-tags"><span class="achv-badge academic">Academic</span><span class="achv-year">2025</span></div>
+          <h3>Beta Gamma Sigma Honor Society Member</h3>
+          <p class="achv-inst">Saunders College of Business, RIT</p>
+          <p class="achv-desc">Inducted into Beta Gamma Sigma, the international honor society recognizing top academic performance among business school students worldwide.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAGE 9 — CONTACT ============ -->
+<section id="contact" class="section contact">
+  <div class="section-inner">
+    <span class="eyebrow">Get In Touch</span>
+    <h2 class="section-title">Let's Talk</h2>
+
+    <div class="contact-grid">
+      <div class="contact-form-col">
+        <form class="contact-form" id="contactForm">
+          <div class="field-group">
+            <input type="text" id="fname" name="fname" required>
+            <label for="fname">Full Name</label>
+            <span class="field-underline"></span>
+          </div>
+          <div class="field-group">
+            <input type="email" id="femail" name="femail" required>
+            <label for="femail">Email Address</label>
+            <span class="field-underline"></span>
+          </div>
+          <div class="field-group">
+            <input type="text" id="fsubject" name="fsubject" required>
+            <label for="fsubject">Subject</label>
+            <span class="field-underline"></span>
+          </div>
+          <div class="field-group">
+            <textarea id="fmessage" name="fmessage" rows="5" required></textarea>
+            <label for="fmessage">Message</label>
+            <span class="field-underline"></span>
+          </div>
+          <button type="submit" class="send-btn" id="sendBtn"><span>Send Message</span></button>
+        </form>
+      </div>
+
+      <div class="contact-info-col">
+        <div class="contact-row">
+          <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 6.5C3 5.67 3.67 5 4.5 5h15c.83 0 1.5.67 1.5 1.5v11c0 .83-.67 1.5-1.5 1.5h-15C3.67 19 3 18.33 3 17.5v-11Z" stroke="currentColor" stroke-width="1.6"/><path d="M4 6.5l8 6.5 8-6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><span class="contact-label">Email</span><a href="mailto:ar4638@rit.edu">ar4638@rit.edu</a></div>
+        </div>
+        <div class="contact-row">
+          <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.4.55 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11 11 0 0 0 .55 3.4 1 1 0 0 1-.25 1l-2.2 2.4Z" fill="currentColor"/></svg></span>
+          <div><span class="contact-label">Phone</span><a href="tel:+15854790550">+1 585 479 0550</a></div>
+        </div>
+        <div class="contact-row">
+          <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.3" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <div><span class="contact-label">Location</span><span class="contact-static">Rochester, New York</span></div>
+        </div>
+        <div class="contact-row">
+          <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19ZM8.34 18V10.13H5.67V18H8.34ZM7 9.04C7.93 9.04 8.51 8.42 8.51 7.64C8.49 6.84 7.93 6.23 7.02 6.23C6.1 6.23 5.5 6.84 5.5 7.64C5.5 8.42 6.1 9.04 7 9.04ZM18.34 18V13.62C18.34 11.27 17.09 10.18 15.42 10.18C14.08 10.18 13.47 10.93 13.13 11.46V10.13H10.46C10.5 10.91 10.46 18 10.46 18H13.13V13.6C13.13 13.36 13.15 13.12 13.22 12.95C13.41 12.47 13.85 11.97 14.58 11.97C15.54 11.97 15.91 12.71 15.91 13.79V18H18.34Z" fill="currentColor"/></svg></span>
+          <div><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/abdulrauf/" target="_blank" rel="noopener">linkedin.com/in/abdulrauf</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-name">Abdul Rauf</p>
+    <p class="footer-tagline">Precision in numbers. Integrity in practice.</p>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/abdulrauf/" aria-label="LinkedIn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19ZM8.34 18V10.13H5.67V18H8.34ZM7 9.04C7.93 9.04 8.51 8.42 8.51 7.64C8.49 6.84 7.93 6.23 7.02 6.23C6.1 6.23 5.5 6.84 5.5 7.64C5.5 8.42 6.1 9.04 7 9.04ZM18.34 18V13.62C18.34 11.27 17.09 10.18 15.42 10.18C14.08 10.18 13.47 10.93 13.13 11.46V10.13H10.46C10.5 10.91 10.46 18 10.46 18H13.13V13.6C13.13 13.36 13.15 13.12 13.22 12.95C13.41 12.47 13.85 11.97 14.58 11.97C15.54 11.97 15.91 12.71 15.91 13.79V18H18.34Z" fill="currentColor"/></svg>
+      </a>
+      <a href="mailto:ar4638@rit.edu" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M3 6.5C3 5.67 3.67 5 4.5 5h15c.83 0 1.5.67 1.5 1.5v11c0 .83-.67 1.5-1.5 1.5h-15C3.67 19 3 18.33 3 17.5v-11Z" stroke="currentColor" stroke-width="1.6"/><path d="M4 6.5l8 6.5 8-6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Abdul Rauf. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
