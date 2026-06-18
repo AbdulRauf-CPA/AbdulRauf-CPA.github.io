@@ -831,12 +831,8 @@ body {
 }
 .achv-card.is-visible { transform: scale(1); opacity: 1; }
 .achv-card:hover { box-shadow: 0 0 0 2px var(--gold-500), 0 22px 44px -14px rgba(11,30,61,0.2); }
-.achv-img-wrap { position: relative; aspect-ratio: 16/9; overflow: hidden; background: var(--navy-800); }
-.achv-img { width: 100%; height: 100%; object-fit: cover; animation: kenBurns 14s ease-in-out infinite alternate; }
-@keyframes kenBurns {
-  0% { transform: scale(1) translate(0,0); }
-  100% { transform: scale(1.12) translate(-2%, -1%); }
-}
+.achv-img-wrap { position: relative; overflow: hidden; background: var(--cream-100); border: 1px solid var(--line); }
+.achv-img { width: 100%; height: auto; display: block; object-fit: contain; }
 .achv-placeholder {
   position: absolute; inset: 0;
   display: none;
