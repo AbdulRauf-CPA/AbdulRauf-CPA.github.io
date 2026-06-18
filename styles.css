@@ -159,7 +159,7 @@ body {
   border-radius: 2px;
 }
 
-/* ===================== LANDING ===================== */
+/* ===================== LANDING / HERO ===================== */
 .landing {
   min-height: 100vh;
   display: flex;
@@ -176,73 +176,136 @@ body {
   background-image: repeating-linear-gradient(
     to bottom,
     transparent 0,
-    transparent 63px,
-    rgba(201, 162, 39, 0.07) 64px
+    transparent 47px,
+    rgba(201, 162, 39, 0.07) 48px
   );
   pointer-events: none;
 }
-.landing-inner {
+
+/* Two-column hero layout */
+.hero-inner-wrap {
   position: relative;
   z-index: 1;
-  max-width: 720px;
-  text-align: center;
+  max-width: var(--max-w);
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 60px;
+  align-items: end;
 }
-.landing-logo-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px; height: 64px;
-  border: 1.5px solid var(--gold-400);
-  border-radius: 10px;
-  color: var(--gold-400);
-  font-weight: 900;
-  font-size: 26px;
-  letter-spacing: 0.04em;
-  margin-bottom: 28px;
-  opacity: 0;
-  animation: fadeUp 0.7s ease forwards;
+
+/* Left column */
+.hero-left {
+  display: flex;
+  flex-direction: column;
 }
-.landing-name {
-  font-size: clamp(40px, 7vw, 68px);
-  font-weight: 900;
-  color: var(--cream-50);
-  margin: 0 0 14px;
-  letter-spacing: -0.02em;
-  opacity: 0;
-  animation: fadeUp 0.7s ease forwards;
-  animation-delay: 0.1s;
-}
-.landing-designation {
-  font-size: clamp(16px, 2vw, 19px);
+.hero-eyebrow-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
   color: var(--gold-300);
-  font-weight: 500;
-  margin: 0 0 28px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   opacity: 0;
   animation: fadeUp 0.7s ease forwards;
-  animation-delay: 0.2s;
+  animation-delay: 0.05s;
 }
-.cpa-note { color: #9fb3d6; font-weight: 400; font-size: 0.85em; }
-.landing-intro {
-  font-size: 16.5px;
+.hero-eyebrow-tag::before {
+  content: '';
+  width: 36px;
+  height: 1px;
+  background: var(--gold-400);
+  flex-shrink: 0;
+}
+.hero-headline {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(2.4rem, 5.5vw, 4.4rem);
+  font-weight: 600;
+  line-height: 1.06;
+  color: var(--cream-50);
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards;
+  animation-delay: 0.15s;
+}
+.hero-headline em {
+  font-style: italic;
+  color: var(--gold-300);
+}
+.hero-lead {
+  font-size: 1.06rem;
   line-height: 1.75;
-  color: #c5d0e3;
-  margin: 0 0 40px;
+  color: rgba(255, 255, 255, 0.76);
+  max-width: 540px;
+  margin-bottom: 34px;
   opacity: 0;
   animation: fadeUp 0.7s ease forwards;
-  animation-delay: 0.32s;
+  animation-delay: 0.28s;
 }
-.landing-ctas {
+.hero-actions {
   display: flex;
   gap: 16px;
-  justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 36px;
   opacity: 0;
   transform: translateY(16px);
   animation: ctaIn 0.6s ease forwards;
-  animation-delay: 0.95s;
+  animation-delay: 0.9s;
 }
-@keyframes ctaIn { to { opacity: 1; transform: translateY(0); } }
+
+/* Career Ledger card */
+.career-ledger {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 2px solid var(--gold-500);
+  padding: 28px 26px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.7s ease forwards;
+  animation-delay: 0.4s;
+}
+.career-ledger-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 18px;
+}
+.career-ledger-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 16px;
+}
+.career-ledger-row:last-child { border-bottom: none; }
+.career-ledger-label {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.68);
+  line-height: 1.4;
+}
+.career-ledger-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--gold-300);
+  white-space: nowrap;
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 860px) {
+  .hero-inner-wrap {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
 
 .btn {
   padding: 14px 28px;
