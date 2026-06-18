@@ -200,26 +200,24 @@ body {
   display: flex;
   flex-direction: column;
 }
-.hero-eyebrow-tag {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.78rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--gold-300);
-  margin-bottom: 22px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.hero-name {
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  font-weight: 700;
+  color: var(--cream-50);
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
   opacity: 0;
   animation: fadeUp 0.7s ease forwards;
   animation-delay: 0.05s;
 }
-.hero-eyebrow-tag::before {
-  content: '';
-  width: 36px;
-  height: 1px;
-  background: var(--gold-400);
-  flex-shrink: 0;
+.hero-cpa-tag {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--gold-400);
+  margin-bottom: 22px;
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards;
+  animation-delay: 0.1s;
 }
 .hero-headline {
   font-family: 'Fraunces', serif;
