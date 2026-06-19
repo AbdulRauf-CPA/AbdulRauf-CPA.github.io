@@ -138,21 +138,40 @@ document.addEventListener('DOMContentLoaded', () => {
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      const name = document.getElementById('fname').value.trim();
-      const email = document.getElementById('femail').value.trim();
-      const subject = document.getElementById('fsubject').value.trim();
-      const message = document.getElementById('fmessage').value.trim();
+      const statusEl = document.getElementById('formStatus');
+      const submitBtn = form.querySelector('.send-btn');
+      const formData = new FormData(form);
 
-      const mailSubject = encodeURIComponent(subject || `Portfolio inquiry from ${name}`);
-      const mailBody = encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\n\n${message}`
-      );
-      window.location.href = `mailto:ar4638@rit.edu?subject=${mailSubject}&body=${mailBody}`;
+      submitBtn.disabled = true;
+      submitBtn.querySelector('span').textContent = 'Sending...';
+      if (statusEl) { statusEl.textContent = ''; statusEl.className = 'form-status'; }
 
-      // Clear the form after handing off to the email client
-      setTimeout(() => {
-        form.reset();
-      }, 300);
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      })
+        .then((response) => {
+          if (response.ok) {
+            if (statusEl) {
+              statusEl.textContent = "Thanks — your message has been sent. I'll get back to you soon.";
+              statusEl.className = 'form-status form-status-success';
+            }
+            form.reset();
+          } else {
+            throw new Error('Submission failed');
+          }
+        })
+        .catch(() => {
+          if (statusEl) {
+            statusEl.textContent = "Something went wrong. Please email me directly at ar4638@rit.edu.";
+            statusEl.className = 'form-status form-status-error';
+          }
+        })
+        .finally(() => {
+          submitBtn.disabled = false;
+          submitBtn.querySelector('span').textContent = 'Send Message';
+        });
     });
   }
 

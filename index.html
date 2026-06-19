@@ -578,28 +578,29 @@
 
     <div class="contact-grid">
       <div class="contact-form-col">
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/mykardjd" method="POST">
           <div class="field-group">
-            <input type="text" id="fname" name="fname" required>
+            <input type="text" id="fname" name="name" required>
             <label for="fname">Full Name</label>
             <span class="field-underline"></span>
           </div>
           <div class="field-group">
-            <input type="email" id="femail" name="femail" required>
+            <input type="email" id="femail" name="email" required>
             <label for="femail">Email Address</label>
             <span class="field-underline"></span>
           </div>
           <div class="field-group">
-            <input type="text" id="fsubject" name="fsubject" required>
+            <input type="text" id="fsubject" name="subject" required>
             <label for="fsubject">Subject</label>
             <span class="field-underline"></span>
           </div>
           <div class="field-group">
-            <textarea id="fmessage" name="fmessage" rows="5" required></textarea>
+            <textarea id="fmessage" name="message" rows="5" required></textarea>
             <label for="fmessage">Message</label>
             <span class="field-underline"></span>
           </div>
           <button type="submit" class="send-btn" id="sendBtn"><span>Send Message</span></button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
         </form>
       </div>
 
