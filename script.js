@@ -148,6 +148,11 @@ document.addEventListener('DOMContentLoaded', () => {
         `Name: ${name}\nEmail: ${email}\n\n${message}`
       );
       window.location.href = `mailto:ar4638@rit.edu?subject=${mailSubject}&body=${mailBody}`;
+
+      // Clear the form after handing off to the email client
+      setTimeout(() => {
+        form.reset();
+      }, 300);
     });
   }
 
